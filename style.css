@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9fafb;
+}
+
+main {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+}
+.image-side {
+    width: 40%;
+    background-image: url(./halie-west-25xggax4bSA-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-side::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.logo-container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.img-odin img {
+    width: 80px;
+    height: 80px;
+    filter: brightness(0) invert(1);
+}
+
+.image-side p {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-family: 'Norse Regular', sans-serif;
+    margin: 0;
+}
+.content-side {
+    width: 60%;
+    padding: 40px 60px;
+    background-color: #ffffff;
+}
+
+.content-side > p {
+    font-size: 0.95rem;
+    color: #6b7280;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+form p:first-of-type {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 20px;
+}
+
+.main-input {
+    background-color: #f3f4f6;
+    border-radius: 8px;
+    padding: 30px;
+}
+.names,
+.contacts,
+.passwords {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.names > div,
+.contacts > div,
+.passwords > div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 6px;
+}
+
+input {
+    padding: 12px 14px;
+    border: 1px solid #E5E7EB;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    background-color: #ffffff;
+    transition: border-color 0.2s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+.passwords input:user-invalid {
+    border-color: #dc2626;
+}
+
+.login-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.login-links button {
+    background-color: #596D48;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.login-links button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(89, 109, 72, 0.4);
+}
+
+.login-links button a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.login-links p {
+    font-size: 0.9rem;
+    color: #6b7280;
+}
+
+.login-links p a {
+    color: #3b82f6;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.login-links p a:hover {
+    text-decoration: underline;
+}
